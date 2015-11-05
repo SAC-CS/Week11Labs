@@ -8,14 +8,15 @@ public class Week11LabMain {
 		int Roll2;
 		int bounces;
 		
-		Dice Rolling = new Dice();
+
 		
 		
 		System.out.println("How many bounces would you like?");
 		bounces = input.nextInt();
-
 		
-		Rolling.Throw(bounces);
+		Dice Rolling = new Dice(bounces);
+		
+		Rolling.Throw();
 
 		
 		roll = Rolling.Value();
