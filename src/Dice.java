@@ -53,3 +53,5 @@ public int Value(){
 		return Value;
 	}
 }
+
+//Please consider a private int to keep track of the numer of times Dice method is called
