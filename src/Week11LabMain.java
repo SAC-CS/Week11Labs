@@ -4,27 +4,25 @@ public class Week11LabMain {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		int roll;
 		int Roll2;
 		int bounces;
-		
+		int dices;
+		int NDice;
 
+		System.out.println("How many dice would you like to throw?");
+		dices = input.nextInt();
 		
-		
-		System.out.println("How many bounces would you like?");
+		System.out.println("How many bounces did your dice make?");
 		bounces = input.nextInt();
 		
-		Dice Rolling = new Dice(bounces);
+		Dice Roll = new Dice(bounces,dices);
+		NDice = Roll.getDice();
 		
-		Rolling.Throw();
+/*		Roll2 = Dice.OneThrow();
 
 		
-		roll = Rolling.Value();
-		Roll2 = Rolling.getAverage();
-		
-		System.out.println(roll);
-		System.out.println(Roll2);
-		
+		System.out.println(Roll2);*/
+		System.out.println(NDice);
 		
 	}
 }
